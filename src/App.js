@@ -4,7 +4,7 @@ import './App.css';
 import Footer from './components/footer/Footer';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/home/Home';
-import Products from './pages/products/Products';
+import { Products } from './components/shooping/Products';
 import Product from './components/product/Product';
 
 const Layout = ()=>{
@@ -30,6 +30,11 @@ function App() {
       {
         path: '/product/:id',
         element: <Product/>
+  
+      },
+      {
+        path: '/products/',
+        element: <Products/>
   
       },
       {

@@ -10,7 +10,7 @@ const [oepencart,setopencart] = useState(false)
   return (
     <div className='navbar'>
         <div className="wrapper">
-            <div className="left">
+            {/* <div className="left">
 <div className="item">
     <img src="/img/en.png" alt="" />
     <MdKeyboardArrowDown/>
@@ -30,9 +30,9 @@ const [oepencart,setopencart] = useState(false)
 <div className="itme">
     <Link className='link' to="/proudcts/3">CHIDLREN</Link>
 </div>
-            </div>
+            </div> */}
             <div className="center">
-                <Link className='link' to="/"><span>DAHABMAL</span> MARKET </Link>
+                <Link className='link' to="/"><span>Hubaal</span> MARKET </Link>
             </div>
             <div className="right">
                 <div className="item">
@@ -42,7 +42,7 @@ const [oepencart,setopencart] = useState(false)
                     <Link className='link' to="/">About</Link>
                 </div>
                 <div className="item">
-                    <Link className='link' to="/">Products</Link>
+                    <Link className='link' to="/products">Products</Link>
                 </div>
                 <div className="item">
                     <Link className='link' to="/">Store</Link>

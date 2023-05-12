@@ -43,7 +43,7 @@ const Footer = () => {
         <div className="bottom">
           <div className="left">
             <div className="logo">
-              <span>DAHABAML</span>
+              <span>Hubaal</span>
             </div>
             <span className='copyright'>  © Copyright 2023. All Rights Reserved</span>
             </div>              

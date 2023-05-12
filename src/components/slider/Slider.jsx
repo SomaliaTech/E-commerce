@@ -14,10 +14,10 @@ const data =[
 const Slider = ()=>{
 const [currentSlider, setCurrenSlider] = useState(0)
 const nextSlider = ()=> {
-setCurrenSlider(currentSlider === 2? 0  : (prev)=> prev -1 )
+setCurrenSlider(currentSlider === 0 ? 2  : (prev)=> prev -1 )
 }
 const prevSlider = ()=> {
-setCurrenSlider(currentSlider === 0 ? 2: (prev) => prev +1)
+setCurrenSlider(currentSlider === 2 ? 0: (prev) => prev +1)
 }
 
 return(
