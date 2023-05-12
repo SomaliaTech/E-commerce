@@ -12,29 +12,28 @@ const data =[
 ]
 
 const Slider = ()=>{
-
-const [currenSlider, setCurrentSlider] = useState(0)  
-
-const sliderPrevev =()=>{
-setCurrentSlider(currenSlider === 0 ? 2 : (prev) => prev +1 )
+const [currentSlider, setCurrenSlider] = useState(0)
+const nextSlider = ()=> {
+setCurrenSlider(currentSlider === 2? 0  : (prev)=> prev -1 )
 }
-const nextSlider = ()=>{
-setCurrentSlider(currenSlider === 2 ? 0 : (prev) => prev - 1)
+const prevSlider = ()=> {
+setCurrenSlider(currentSlider === 0 ? 2: (prev) => prev +1)
 }
+
 return(
   <div className="slider">
-    <div className="container" style={{transform:`translateX(-${currenSlider * 100}vw)`}}>
+    <div className="container" style={{transform: `translateX(-${currentSlider * 100}vw)`}}>
       <img src={data[0]} alt="" />
       <img src={data[1]} alt="" />
       <img src={data[2]} alt="" />
       
     </div>
     <div className="icons">
-      <div className="icon">
-        <AiOutlineArrowLeft onClick={sliderPrevev}/>
+      <div className="icon" onClick={prevSlider}>
+        <AiOutlineArrowLeft />
       </div>
-      <div className="icon">
-        <AiOutlineArrowRight onClick={nextSlider}/>
+      <div className="icon" onClick={nextSlider}>
+        <AiOutlineArrowRight />
       </div>
     </div>
 
