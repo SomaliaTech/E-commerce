@@ -1,0 +1,55 @@
+.categories {
+  display: flex;
+  height: 80vh;
+  gap: 10px;
+  margin: 10px;
+  overflow: hidden;
+  
+  .col{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+    // s
+    .row{
+        display: flex;
+        flex: 1;
+        gap: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+   
+  }
+  button{
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    height: 50px;
+    min-width: 102px;
+    width: fit-content;
+    padding: 10px 15px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #ccc;
+    &:hover{
+        background-color: #23af16;
+    }
+    
+  }
+  
+  .col-l{
+   
+    flex: 2;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  }

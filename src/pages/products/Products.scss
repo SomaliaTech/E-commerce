@@ -1,0 +1,38 @@
+.product{
+    display: flex;
+overflow: hidden;
+    .left{
+flex: 1;
+display: flex;
+height: 100%;
+position: sticky;
+flex-direction: column;
+top: 50px;
+
+.filterItems{
+    display: flex;
+    flex-direction: column;
+  
+    gap: 10px;
+    .inputitem{
+        display: flex;
+        gap: 5px;
+    }
+    label{
+        margin-left: 10px ;
+    }
+}
+    }
+    .right{
+        flex: 3;
+       
+        .imgcard{
+      
+         img{
+            width: 100%;
+            max-height: 100px;
+        }
+        }
+       
+    }
+}

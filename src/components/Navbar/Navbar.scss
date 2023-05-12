@@ -1,0 +1,56 @@
+.navbar{
+    height: 80px;
+    .wrapper{
+    padding: 10px 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+.left{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+}
+.item{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+
+}
+.center{
+    font-size: 30px;
+    span{
+        color: #63DF74;
+    }
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    .icons{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        font-size: 23px;
+        cursor: pointer;
+        .carticon{
+            position: relative;
+            span{
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #63DF74;
+                color: white;
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+    }
+}
